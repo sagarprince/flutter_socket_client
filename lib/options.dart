@@ -51,7 +51,7 @@ class SocketOptions {
       this.enableLogging: false,
       this.transports: const [Transports.WEB_SOCKET, Transports.POLLING],
       this.nameSpace = "/",
-      this.path = '/socket.io'})
+      this.path = '/socket.io', this.timeout = 20000})
       : assert(nameSpace.startsWith("/"),
             "Namespace must be a non null string and should start with a '/'");
 
