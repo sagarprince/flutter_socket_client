@@ -11,7 +11,7 @@ class SocketOptions {
   List<Transports> transports;
 
   ///Connection timeout (ms). Set -1 to disable.
-  int timeout = 20000;
+  int timeout;
 
   ///Namespace parameter
   String nameSpace;
